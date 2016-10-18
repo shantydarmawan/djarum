@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ahli">
+        <item>single woman</item>
+        <item>double  woman</item>
+        <item>single man</item>
+        <item>double man</item>
+        <item>mix double</item>
+    </string-array>
+    >
+</resources>
