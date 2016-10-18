@@ -70,6 +70,37 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
-        }
+            private boolean isValid() {
+                boolean valid = true;
 
+
+                String nama = etNama.getText().toString();
+                String alamat = etAlamat.getText().toString();
+                if (nama.isEmpty()) {
+                    etNama.setError("nama belum diisi");
+                    valid = false;
+
+                } else if (nama.length() < 4) {
+                    etNama.setError("Nama tidak boleh kurang dari 4 karakter");
+                    valid = false;
+                } else if (alamat.length() < 5) {
+                    etAlamat.setError("Alamat tidak boleh kurang dari 5 karakter");
+                    valid = false;
+                } else {
+                    etNama.setError(null);
+                }
+                if (nama.isEmpty()) {
+                    etNama.setError("nama belum diisi");
+                    valid = false;
+                } else {
+                    etNama.setError(null);
+                }
+
+                return valid;
+
+
+            }
+        });
     }
+
+}
